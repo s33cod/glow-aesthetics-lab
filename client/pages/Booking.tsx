@@ -4,6 +4,7 @@ import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
+import { SEO } from "@/components/ui/seo";
 import {
   Calendar,
   ArrowLeft,
@@ -150,6 +151,11 @@ Please confirm this appointment by contacting the client directly.
   if (isSubmitted) {
     return (
       <div className="min-h-screen bg-cream">
+        <SEO
+          title="Booking Confirmation - Glow Aesthetics Lab London"
+          description="Thank you for your booking request! We'll contact you within 24 hours to confirm your aesthetic treatment appointment."
+          url="https://glowaestheticslab.com/booking"
+        />
         <Navigation />
 
         <section className="py-20">
@@ -211,6 +217,12 @@ Please confirm this appointment by contacting the client directly.
 
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Book Appointment - Glow Aesthetics Lab London"
+        description="Book your aesthetic treatment appointment online. Free consultations available. Expert treatments including Botox, dermal fillers, and skin rejuvenation in Surrey Quays, London."
+        keywords="book aesthetic treatment London, beauty appointment Surrey Quays, botox booking London, dermal filler appointment, free consultation London"
+        url="https://glowaestheticslab.com/booking"
+      />
       <Navigation />
 
       {/* Header with Background Image */}
