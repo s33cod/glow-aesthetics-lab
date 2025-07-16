@@ -536,7 +536,7 @@ export default function Index() {
                     href="https://www.facebook.com/glowaestheticslab"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-gold transition-colors"
+                    className="hover:text-[#fb0090] transition-colors"
                   >
                     <Facebook className="h-5 w-5" />
                   </a>
@@ -544,7 +544,7 @@ export default function Index() {
                     href="https://www.instagram.com/glow_aesthetics_lab"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-gold transition-colors"
+                    className="hover:text-[#fb0090] transition-colors"
                   >
                     <Instagram className="h-5 w-5" />
                   </a>
@@ -552,7 +552,7 @@ export default function Index() {
                     href="https://www.tiktok.com/@glowaestheticslab"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-gold transition-colors"
+                    className="hover:text-[#fb0090] transition-colors"
                   >
                     <Music className="h-5 w-5" />
                   </a>
