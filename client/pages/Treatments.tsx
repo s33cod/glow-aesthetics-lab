@@ -1,0 +1,336 @@
+import { Button } from "@/components/ui/button";
+import { Calendar, Clock, Star, ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+
+export default function Treatments() {
+  const treatmentCategories = [
+    {
+      name: "Injectables",
+      treatments: [
+        {
+          name: "Botox",
+          description:
+            "Reduce fine lines and wrinkles with precision botulinum toxin injections",
+          duration: "30 minutes",
+          price: "$299",
+          details: [
+            "Forehead lines",
+            "Crow's feet",
+            "Frown lines",
+            "Results last 3-4 months",
+          ],
+        },
+        {
+          name: "Dermal Fillers",
+          description:
+            "Restore volume and smooth lines with hyaluronic acid fillers",
+          duration: "45 minutes",
+          price: "$599",
+          details: [
+            "Lip enhancement",
+            "Cheek augmentation",
+            "Nasolabial folds",
+            "Results last 12-18 months",
+          ],
+        },
+        {
+          name: "Lip Fillers",
+          description:
+            "Enhance lip volume and definition for a natural, beautiful look",
+          duration: "30 minutes",
+          price: "$499",
+          details: [
+            "Volume enhancement",
+            "Border definition",
+            "Symmetry correction",
+            "Natural-looking results",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Skin Rejuvenation",
+      treatments: [
+        {
+          name: "Chemical Peels",
+          description:
+            "Reveal fresh, radiant skin with customized chemical exfoliation",
+          duration: "60 minutes",
+          price: "$150",
+          details: [
+            "Light, medium, or deep peels",
+            "Acne treatment",
+            "Pigmentation correction",
+            "Minimal downtime",
+          ],
+        },
+        {
+          name: "Microneedling",
+          description:
+            "Stimulate collagen production for improved skin texture and tone",
+          duration: "75 minutes",
+          price: "$299",
+          details: [
+            "Collagen induction",
+            "Scar reduction",
+            "Pore refinement",
+            "Series recommended",
+          ],
+        },
+        {
+          name: "HydraFacial",
+          description:
+            "Multi-step treatment that cleanses, extracts, and hydrates",
+          duration: "45 minutes",
+          price: "$199",
+          details: [
+            "Deep cleansing",
+            "Gentle extraction",
+            "Intense hydration",
+            "Immediate glow",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Laser Treatments",
+      treatments: [
+        {
+          name: "Laser Hair Removal",
+          description:
+            "Safe, effective permanent hair reduction for all skin types",
+          duration: "30-90 minutes",
+          price: "$99",
+          details: [
+            "All skin types",
+            "Multiple areas available",
+            "6-8 sessions recommended",
+            "Long-lasting results",
+          ],
+        },
+        {
+          name: "Laser Skin Resurfacing",
+          description:
+            "Advanced laser technology for skin texture and tone improvement",
+          duration: "60 minutes",
+          price: "$599",
+          details: [
+            "Wrinkle reduction",
+            "Scar improvement",
+            "Sun damage repair",
+            "Minimal downtime",
+          ],
+        },
+      ],
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-cream">
+      {/* Navigation */}
+      <nav className="bg-background/95 backdrop-blur-md border-b border-gold/20 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <Link to="/">
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
+                  alt="Glow Aesthetics Lab"
+                  className="h-12 w-auto"
+                />
+              </Link>
+            </div>
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline space-x-8">
+                <Link
+                  to="/"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                >
+                  Home
+                </Link>
+                <a
+                  href="#"
+                  className="text-foreground hover:text-gold transition-colors font-medium"
+                >
+                  Treatments
+                </a>
+                <a
+                  href="#about"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                >
+                  About
+                </a>
+                <a
+                  href="#contact"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Button className="bg-gold hover:bg-gold/90 text-white font-semibold">
+                Book Consultation
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Header */}
+      <section className="bg-gradient-to-br from-gold/10 via-warm-beige/20 to-gold-light/10 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center mb-6">
+            <Link
+              to="/"
+              className="flex items-center text-muted-foreground hover:text-gold transition-colors mr-4"
+            >
+              <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to Home
+            </Link>
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Treatment Menu & Pricing
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Explore our comprehensive range of premium aesthetic treatments,
+              each designed to enhance your natural beauty
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Treatments */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {treatmentCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-16">
+              <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+                {category.name}
+              </h2>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                {category.treatments.map((treatment, treatmentIndex) => (
+                  <div
+                    key={treatmentIndex}
+                    className="bg-background rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gold/10"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-semibold text-foreground">
+                        {treatment.name}
+                      </h3>
+                      <div className="text-right">
+                        <div className="text-2xl font-bold text-gold">
+                          {treatment.price}
+                        </div>
+                        <div className="flex items-center text-sm text-muted-foreground">
+                          <Clock className="h-3 w-3 mr-1" />
+                          {treatment.duration}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {treatment.description}
+                    </p>
+                    <div className="mb-6">
+                      <h4 className="font-medium text-foreground mb-3">
+                        What's Included:
+                      </h4>
+                      <ul className="space-y-2">
+                        {treatment.details.map((detail, detailIndex) => (
+                          <li
+                            key={detailIndex}
+                            className="flex items-center text-sm text-muted-foreground"
+                          >
+                            <Star className="h-3 w-3 mr-2 text-gold fill-current" />
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-white font-semibold">
+                        <Calendar className="mr-2 h-4 w-4" />
+                        Book This Treatment
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="w-full border-gold text-gold hover:bg-gold/10"
+                      >
+                        Learn More
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Consultation CTA */}
+      <section className="py-16 bg-gradient-to-br from-gold/10 via-warm-beige/20 to-gold-light/10">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-foreground mb-4">
+            Not Sure Which Treatment is Right for You?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Book a complimentary consultation with our expert team to create a
+            personalized treatment plan
+          </p>
+          <Button
+            size="lg"
+            className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+          >
+            <Calendar className="mr-2 h-5 w-5" />
+            Book Free Consultation
+          </Button>
+        </div>
+      </section>
+
+      {/* Policies */}
+      <section className="py-12 bg-background">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h3 className="font-semibold text-foreground mb-2">
+                Booking Policy
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                24-hour cancellation notice required. Same-day cancellations may
+                incur a fee.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground mb-2">
+                Payment Options
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                We accept cash, credit cards, and offer financing options for
+                larger treatments.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground mb-2">
+                Results Timeline
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Results vary by treatment. Some show immediate effects, others
+                develop over 2-4 weeks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-bronze text-cream py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-cream/60">
+            &copy; 2024 Glow Aesthetics Lab. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
