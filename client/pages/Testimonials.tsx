@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { BackToTop } from "@/components/ui/back-to-top";
+import { Chatbot } from "@/components/ui/chatbot";
 import {
   ArrowLeft,
   Star,
@@ -229,6 +231,10 @@ export default function Testimonials() {
           </p>
         </div>
       </footer>
+
+      {/* Fixed UI Components */}
+      <BackToTop />
+      <Chatbot />
     </div>
   );
 }
