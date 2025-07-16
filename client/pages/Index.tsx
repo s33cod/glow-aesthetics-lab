@@ -470,28 +470,28 @@ export default function Index() {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0aaed9e3c0bc4af1824e9f223c554dbf?format=webp&width=300",
-                alt: "Skin rejuvenation results",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fe5f17c02215f4d4fb7e0e96ad84d5888?format=webp&width=300",
+                alt: "Professional facial treatment session",
               },
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fc82837296ec840dcadde9932b5ec0112?format=webp&width=300",
-                alt: "HydroFiller+ treatment",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fe572a766472442be84487efa50564391?format=webp&width=300",
+                alt: "Aesthetic injection treatment",
               },
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fcf33cb88d8c64324bb2f795f89747654?format=webp&width=300",
-                alt: "Microneedling before treatment",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Ff260a1ba2ee94b719aa24773a2efd267?format=webp&width=300",
+                alt: "Lip enhancement procedure",
               },
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fa17cffd0404f43c19b369d4aadf23bf8?format=webp&width=300",
-                alt: "Microneedling after treatment",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F624c103e669846699ec80213a5723756?format=webp&width=300",
+                alt: "Professional skincare treatment",
               },
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0f93fbf6d06343d5bcc3902c307f9a14?format=webp&width=300",
-                alt: "Lip enhancement results",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F29ecb9d2758444de84b1dc7996674e9c?format=webp&width=300",
+                alt: "Client consultation and results",
               },
               {
-                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fb297d62335e842ad8a4b49f5d2260c7c?format=webp&width=300",
-                alt: "Anti-aging neck treatment",
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fc3c844b0a9b4474cbae560ce945dd908?format=webp&width=300",
+                alt: "Advanced aesthetic treatment",
               },
             ].map((item, index) => (
               <a
