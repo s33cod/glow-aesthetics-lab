@@ -291,32 +291,32 @@ export default function Treatments() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Botox",
+                title: "HydroFiller Treatment",
                 before:
-                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F4c1b54bbbb90491fb9fe373a2f020c8c?format=webp&width=400",
                 after:
-                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F4c1b54bbbb90491fb9fe373a2f020c8c?format=webp&width=400",
               },
               {
-                title: "Lip Fillers",
+                title: "Lip Enhancement",
                 before:
-                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Ffd971bd5b6724ca193083843d4154bbb?format=webp&width=400",
                 after:
-                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=300",
-              },
-              {
-                title: "Chemical Peel",
-                before:
-                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=300",
-                after:
-                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Ffd971bd5b6724ca193083843d4154bbb?format=webp&width=400",
               },
               {
                 title: "Microneedling",
                 before:
-                  "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F6067c8cf367948fd856ee972edb43066?format=webp&width=400",
                 after:
-                  "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=300",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F639e8b19d68a42729be93231a640ec67?format=webp&width=400",
+              },
+              {
+                title: "Anti-Aging Treatment",
+                before:
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F92d76ba92d8c40daa7c60cc310cb4a0e?format=webp&width=400",
+                after:
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fd31ffe02157b486e8799d898c80eedf8?format=webp&width=400",
               },
             ].map((result, index) => (
               <div
