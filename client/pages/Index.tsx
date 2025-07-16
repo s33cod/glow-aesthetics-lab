@@ -112,8 +112,11 @@ export default function Index() {
                 <Phone className="h-4 w-4 mr-2" />
                 <span>(555) 123-4567</span>
               </div>
-              <Button className="bg-gold hover:bg-gold/90 text-white font-semibold">
-                Book Consultation
+              <Button
+                className="bg-gold hover:bg-gold/90 text-white font-semibold"
+                asChild
+              >
+                <Link to="/booking">Book Consultation</Link>
               </Button>
             </div>
           </div>
@@ -138,9 +141,12 @@ export default function Index() {
                 <Button
                   size="lg"
                   className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+                  asChild
                 >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Book Your Consultation
+                  <Link to="/booking">
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Book Your Consultation
+                  </Link>
                 </Button>
                 <Button
                   size="lg"
@@ -283,9 +289,12 @@ export default function Index() {
             <Button
               size="lg"
               className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+              asChild
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Schedule Consultation
+              <Link to="/booking">
+                <Calendar className="mr-2 h-5 w-5" />
+                Schedule Consultation
+              </Link>
             </Button>
             <Button
               size="lg"
