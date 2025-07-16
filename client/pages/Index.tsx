@@ -425,14 +425,32 @@ export default function Index() {
                 Premium aesthetic treatments in a luxury setting. Owned and
                 operated by Olivene D.
               </p>
-              <div className="flex space-x-4 text-cream/60">
+              <div className="flex items-center space-x-4 text-cream/60">
                 <span>Follow us:</span>
-                <div className="flex space-x-2">
-                  <a href="#" className="hover:text-gold transition-colors">
-                    Facebook
+                <div className="flex space-x-3">
+                  <a
+                    href="https://www.facebook.com/glowaestheticslab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors"
+                  >
+                    <Facebook className="h-5 w-5" />
                   </a>
-                  <a href="#" className="hover:text-gold transition-colors">
-                    Instagram
+                  <a
+                    href="https://www.instagram.com/glow_aesthetics_lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@glowaestheticslab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gold transition-colors"
+                  >
+                    <Music className="h-5 w-5" />
                   </a>
                 </div>
               </div>
