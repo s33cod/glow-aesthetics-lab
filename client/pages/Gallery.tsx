@@ -2,15 +2,10 @@ import { Button } from "@/components/ui/button";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
-import {
-  ArrowLeft,
-  Calendar,
-  Home,
-  Stethoscope,
-  MessageSquare,
-  Camera,
-  Mail,
-} from "lucide-react";
+import { Navigation } from "@/components/ui/navigation";
+import { Footer } from "@/components/ui/footer";
+import { SEO } from "@/components/ui/seo";
+import { ArrowLeft, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Gallery() {
