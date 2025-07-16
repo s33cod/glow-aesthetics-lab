@@ -144,16 +144,35 @@ export default function Index() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-warm-beige/30 to-gold-light/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Hero Section with Video */}
+      <section className="relative h-screen overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/4046735/4046735-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
             <div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 Reveal Your
                 <span className="text-gold block">Natural Glow</span>
               </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-white/90 mb-8 leading-relaxed">
                 Experience premium aesthetic treatments in a luxurious,
                 welcoming environment. Our expert team is dedicated to helping
                 you look and feel your absolute best.
@@ -172,13 +191,13 @@ export default function Index() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-gold text-gold hover:bg-gold/10"
+                  className="border-white text-white hover:bg-white/10"
                   asChild
                 >
                   <Link to="/treatments">View Treatments</Link>
                 </Button>
               </div>
-              <div className="flex items-center space-x-6 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-6 text-sm text-white/80">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
                   <span>Downtown Location</span>
@@ -189,18 +208,14 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-gold/20 to-warm-beige/30 rounded-full p-8">
-                <div className="w-full h-full bg-gradient-to-br from-gold/10 to-transparent rounded-full flex items-center justify-center">
-                  <img
-                    src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                    alt="Glow Aesthetics Lab"
-                    className="w-3/4 h-auto opacity-80"
-                  />
-                </div>
+            <div className="relative flex justify-center">
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-8">
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
+                  alt="Glow Aesthetics Lab"
+                  className="w-64 h-auto opacity-90"
+                />
               </div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gold/20 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-warm-beige/30 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>
