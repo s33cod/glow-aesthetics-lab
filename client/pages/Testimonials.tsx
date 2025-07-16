@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Star, Quote } from "lucide-react";
+import {
+  ArrowLeft,
+  Star,
+  Quote,
+  Home,
+  Stethoscope,
+  MessageSquare,
+  Camera,
+  Mail,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Testimonials() {
@@ -67,32 +76,37 @@ export default function Testimonials() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link
                   to="/"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Home className="h-4 w-4 mr-2" />
                   Home
                 </Link>
                 <Link
                   to="/treatments"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Stethoscope className="h-4 w-4 mr-2" />
                   Treatments
                 </Link>
                 <a
                   href="#"
-                  className="text-foreground hover:text-gold transition-colors font-medium"
+                  className="text-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <MessageSquare className="h-4 w-4 mr-2" />
                   Testimonials
                 </a>
                 <Link
                   to="/gallery"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Camera className="h-4 w-4 mr-2" />
                   Gallery
                 </Link>
                 <a
                   href="#contact"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Mail className="h-4 w-4 mr-2" />
                   Contact
                 </a>
               </div>
