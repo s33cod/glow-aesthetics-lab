@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { Chatbot } from "@/components/ui/chatbot";
+import { CookieConsent } from "@/components/ui/cookie-consent";
 import {
   Calendar,
   ArrowLeft,
@@ -260,6 +261,7 @@ Please confirm this appointment by contacting the client directly.
 
         <BackToTop />
         <Chatbot />
+        <CookieConsent />
       </div>
     );
   }
