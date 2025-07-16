@@ -601,6 +601,10 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      {/* Fixed UI Components */}
+      <BackToTop />
+      <Chatbot />
     </div>
   );
 }
