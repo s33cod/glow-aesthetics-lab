@@ -25,7 +25,7 @@ export default function Treatments() {
           description:
             "Reduce fine lines and wrinkles with precision botulinum toxin injections",
           duration: "30 minutes",
-          price: "$299",
+          price: "£299",
           details: [
             "Forehead lines",
             "Crow's feet",
@@ -38,7 +38,7 @@ export default function Treatments() {
           description:
             "Restore volume and smooth lines with hyaluronic acid fillers",
           duration: "45 minutes",
-          price: "$599",
+          price: "£599",
           details: [
             "Lip enhancement",
             "Cheek augmentation",
@@ -51,7 +51,7 @@ export default function Treatments() {
           description:
             "Enhance lip volume and definition for a natural, beautiful look",
           duration: "30 minutes",
-          price: "$499",
+          price: "£499",
           details: [
             "Volume enhancement",
             "Border definition",
@@ -69,7 +69,7 @@ export default function Treatments() {
           description:
             "Reveal fresh, radiant skin with customized chemical exfoliation",
           duration: "60 minutes",
-          price: "$150",
+          price: "£150",
           details: [
             "Light, medium, or deep peels",
             "Acne treatment",
@@ -82,7 +82,7 @@ export default function Treatments() {
           description:
             "Stimulate collagen production for improved skin texture and tone",
           duration: "75 minutes",
-          price: "$299",
+          price: "£299",
           details: [
             "Collagen induction",
             "Scar reduction",
@@ -95,7 +95,7 @@ export default function Treatments() {
           description:
             "Multi-step treatment that cleanses, extracts, and hydrates",
           duration: "45 minutes",
-          price: "$199",
+          price: "£199",
           details: [
             "Deep cleansing",
             "Gentle extraction",
@@ -113,7 +113,7 @@ export default function Treatments() {
           description:
             "Safe, effective permanent hair reduction for all skin types",
           duration: "30-90 minutes",
-          price: "$99",
+          price: "£99",
           details: [
             "All skin types",
             "Multiple areas available",
@@ -126,7 +126,7 @@ export default function Treatments() {
           description:
             "Advanced laser technology for skin texture and tone improvement",
           duration: "60 minutes",
-          price: "$599",
+          price: "£599",
           details: [
             "Wrinkle reduction",
             "Scar improvement",
