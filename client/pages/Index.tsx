@@ -312,6 +312,70 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Instagram Feed */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Follow Our Journey
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              See our latest treatments and transformations on Instagram
+            </p>
+            <a
+              href="https://www.instagram.com/glow_aesthetics_lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-gold hover:text-gold/80 transition-colors font-semibold"
+            >
+              @glow_aesthetics_lab
+            </a>
+          </div>
+
+          {/* Instagram Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            {[
+              "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=300",
+              "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=300",
+              "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=300",
+              "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=300",
+              "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=300",
+              "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=300",
+            ].map((src, index) => (
+              <a
+                key={index}
+                href="https://www.instagram.com/glow_aesthetics_lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden hover:scale-105 transition-transform"
+              >
+                <img
+                  src={src}
+                  alt={`Instagram post ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
+                />
+              </a>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Button
+              variant="outline"
+              className="border-gold text-gold hover:bg-gold/10"
+              asChild
+            >
+              <a
+                href="https://www.instagram.com/glow_aesthetics_lab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View More on Instagram
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-gold/10 via-warm-beige/20 to-gold-light/10">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
