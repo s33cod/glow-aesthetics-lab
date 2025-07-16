@@ -43,9 +43,9 @@ export function Navigation({ className = "" }: NavigationProps) {
           <div className="flex items-center">
             <Link to="/" onClick={closeMenu}>
               <img
-                src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F7fe33af5fbb54f1c926bc36781e78316?format=webp&width=800"
                 alt="Glow Aesthetics Lab"
-                className="h-10 sm:h-12 w-auto"
+                className="h-12 sm:h-14 lg:h-16 w-auto"
               />
             </Link>
           </div>
