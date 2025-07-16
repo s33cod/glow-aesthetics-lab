@@ -360,14 +360,25 @@ export default function Index() {
               <div className="space-y-2 text-cream/80">
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  <span>(555) 123-4567</span>
+                  <a
+                    href="tel:+447904949580"
+                    className="hover:text-gold transition-colors"
+                  >
+                    +44 7904 949580
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2" />
                   <span>123 Beauty Ave, Downtown</span>
                 </div>
                 <div>
-                  <span>Email: charles@consultant.com</span>
+                  <span>Email: </span>
+                  <a
+                    href="mailto:info@glowaestheticslab.com"
+                    className="hover:text-gold transition-colors"
+                  >
+                    info@glowaestheticslab.com
+                  </a>
                 </div>
               </div>
             </div>
@@ -390,7 +401,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-cream/20 mt-8 pt-8 text-center text-cream/60">
-            <p>&copy; 2024 Glow Aesthetics Lab. All rights reserved.</p>
+            <p>&copy; 2025 Glow Aesthetics Lab. All rights reserved.</p>
           </div>
         </div>
       </footer>
