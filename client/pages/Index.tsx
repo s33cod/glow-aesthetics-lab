@@ -789,6 +789,7 @@ export default function Index() {
       {/* Fixed UI Components */}
       <BackToTop />
       <Chatbot />
+      <CookieConsent />
     </div>
   );
 }
