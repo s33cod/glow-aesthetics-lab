@@ -126,13 +126,18 @@ export default function Index() {
             <div className="flex items-center space-x-4">
               <div className="hidden sm:flex items-center text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>(555) 123-4567</span>
+                <a
+                  href="tel:+447904949580"
+                  className="hover:text-gold transition-colors"
+                >
+                  +44 7904 949580
+                </a>
               </div>
               <Button
                 className="bg-gold hover:bg-gold/90 text-white font-semibold"
                 asChild
               >
-                <Link to="/booking">Book Consultation</Link>
+                <Link to="/booking">Book Appointment</Link>
               </Button>
             </div>
           </div>
@@ -161,7 +166,7 @@ export default function Index() {
                 >
                   <Link to="/booking">
                     <Calendar className="mr-2 h-5 w-5" />
-                    Book Your Consultation
+                    Book Your Appointment
                   </Link>
                 </Button>
                 <Button
@@ -309,7 +314,7 @@ export default function Index() {
             >
               <Link to="/booking">
                 <Calendar className="mr-2 h-5 w-5" />
-                Schedule Consultation
+                Schedule Appointment
               </Link>
             </Button>
             <Button
@@ -318,7 +323,7 @@ export default function Index() {
               className="border-gold text-gold hover:bg-gold/10"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call (555) 123-4567
+              Call +44 7904 949580
             </Button>
           </div>
         </div>
