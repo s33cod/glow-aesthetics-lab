@@ -146,8 +146,9 @@ export default function Index() {
                   size="lg"
                   variant="outline"
                   className="border-gold text-gold hover:bg-gold/10"
+                  asChild
                 >
-                  View Treatments
+                  <Link to="/treatments">View Treatments</Link>
                 </Button>
               </div>
               <div className="flex items-center space-x-6 text-sm text-muted-foreground">
