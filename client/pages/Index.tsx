@@ -258,29 +258,29 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Botox Treatment",
+                title: "Microneedling Treatment",
+                description: "Skin texture improvement after one session",
+                before:
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F6067c8cf367948fd856ee972edb43066?format=webp&width=800",
+                after:
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F639e8b19d68a42729be93231a640ec67?format=webp&width=800",
+              },
+              {
+                title: "Lip Enhancement",
                 description:
-                  "Forehead lines reduction - 2 weeks post treatment",
+                  "Natural lip volume enhancement with dermal fillers",
                 before:
-                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F4c1b54bbbb90491fb9fe373a2f020c8c?format=webp&width=800",
                 after:
-                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Ffd971bd5b6724ca193083843d4154bbb?format=webp&width=800",
               },
               {
-                title: "Dermal Fillers",
-                description: "Lip enhancement - Natural volume increase",
+                title: "Anti-Aging Treatment",
+                description: "Neck and jawline rejuvenation results",
                 before:
-                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F92d76ba92d8c40daa7c60cc310cb4a0e?format=webp&width=800",
                 after:
-                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
-              },
-              {
-                title: "Chemical Peel",
-                description: "Skin rejuvenation - 6 weeks post treatment",
-                before:
-                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=400",
-                after:
-                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400",
+                  "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fd31ffe02157b486e8799d898c80eedf8?format=webp&width=800",
               },
             ].map((result, index) => (
               <div key={index} className="bg-cream rounded-2xl p-6 shadow-lg">
