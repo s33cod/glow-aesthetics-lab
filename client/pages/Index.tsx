@@ -12,6 +12,7 @@ import {
   Users,
   Shield,
   Home,
+  User,
   Stethoscope,
   MessageSquare,
   Camera,
