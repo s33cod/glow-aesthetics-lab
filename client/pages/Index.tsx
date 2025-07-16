@@ -30,28 +30,28 @@ export default function Index() {
       description:
         "Professional anti-aging treatments for natural-looking results",
       image: "/placeholder.svg",
-      price: "From $299",
+      price: "From £299",
     },
     {
       name: "Chemical Peels",
       description:
         "Reveal fresh, radiant skin with our customized peel treatments",
       image: "/placeholder.svg",
-      price: "From $150",
+      price: "From £150",
     },
     {
       name: "Laser Hair Removal",
       description:
         "Safe, effective permanent hair reduction for all skin types",
       image: "/placeholder.svg",
-      price: "From $99",
+      price: "From £99",
     },
     {
       name: "Skin Rejuvenation",
       description:
         "Advanced treatments for texture, tone, and overall skin health",
       image: "/placeholder.svg",
-      price: "From $199",
+      price: "From £199",
     },
   ];
 
