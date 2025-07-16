@@ -80,10 +80,9 @@ export default function Index() {
     },
   ];
 
-  return (
+    return (
     <div className="min-h-screen bg-cream">
-      {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-md border-b border-gold/20 sticky top-0 z-50">
+      <Navigation />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
