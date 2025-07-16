@@ -9,9 +9,9 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F7fe33af5fbb54f1c926bc36781e78316?format=webp&width=800"
               alt="Glow Aesthetics Lab"
-              className="h-10 sm:h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 sm:h-16 w-auto mb-4"
             />
             <p className="text-cream/80 mb-4 text-sm sm:text-base">
               Premium aesthetic treatments in a luxury setting. Owned and
