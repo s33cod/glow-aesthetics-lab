@@ -1,32 +1,34 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className="bg-bronze text-cream py-12">
+    <footer className="bg-bronze text-cream py-8 sm:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          {/* Company Info */}
+          <div className="sm:col-span-2 lg:col-span-1">
             <img
               src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
               alt="Glow Aesthetics Lab"
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-10 sm:h-12 w-auto mb-4 brightness-0 invert"
             />
-            <p className="text-cream/80 mb-4">
+            <p className="text-cream/80 mb-4 text-sm sm:text-base">
               Premium aesthetic treatments in a luxury setting. Owned and
               operated by Olivene D.
             </p>
             <div className="flex items-center space-x-4 text-cream/60">
-              <span>Follow us:</span>
+              <span className="text-sm">Follow us:</span>
               <div className="flex space-x-3">
                 <a
                   href="https://www.facebook.com/glowaestheticslab"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#fb0090] transition-colors"
+                  aria-label="Facebook"
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-4 w-4 sm:h-5 sm:w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -38,9 +40,10 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#fb0090] transition-colors"
+                  aria-label="Instagram"
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-4 w-4 sm:h-5 sm:w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -52,9 +55,10 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#fb0090] transition-colors"
+                  aria-label="TikTok"
                 >
                   <svg
-                    className="h-5 w-5"
+                    className="h-4 w-4 sm:h-5 sm:w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -64,11 +68,15 @@ export function Footer() {
               </div>
             </div>
           </div>
+
+          {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Contact Info</h3>
-            <div className="space-y-2 text-cream/80">
-              <div className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              Contact Info
+            </h3>
+            <div className="space-y-2 text-cream/80 text-sm sm:text-base">
+              <div className="flex items-start">
+                <Phone className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
                 <a
                   href="tel:+447904949580"
                   className="hover:text-[#fb0090] transition-colors"
@@ -76,24 +84,28 @@ export function Footer() {
                   +44 7904 949580
                 </a>
               </div>
-              <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Beauty Ave, Downtown</span>
+              <div className="flex items-start">
+                <MapPin className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
+                <span>Surrey Quays, LONDON SE16. UK</span>
               </div>
-              <div>
-                <span>Email: </span>
+              <div className="flex items-start">
+                <Mail className="h-4 w-4 mr-2 mt-0.5 flex-shrink-0" />
                 <a
                   href="mailto:info@glowaestheticslab.com"
-                  className="hover:text-[#fb0090] transition-colors"
+                  className="hover:text-[#fb0090] transition-colors break-all"
                 >
                   info@glowaestheticslab.com
                 </a>
               </div>
             </div>
           </div>
+
+          {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <div className="space-y-2 text-cream/80">
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              Quick Links
+            </h3>
+            <div className="space-y-2 text-cream/80 text-sm sm:text-base">
               <Link
                 to="/booking"
                 className="block hover:text-[#fb0090] transition-colors"
@@ -118,11 +130,58 @@ export function Footer() {
               >
                 Contact Us
               </Link>
+              <Link
+                to="/gallery"
+                className="block hover:text-[#fb0090] transition-colors"
+              >
+                Gallery
+              </Link>
+            </div>
+          </div>
+
+          {/* Legal Links */}
+          <div>
+            <h3 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">
+              Legal
+            </h3>
+            <div className="space-y-2 text-cream/80 text-sm sm:text-base">
+              <Link
+                to="/terms"
+                className="block hover:text-[#fb0090] transition-colors"
+              >
+                Terms & Conditions
+              </Link>
+              <Link
+                to="/privacy"
+                className="block hover:text-[#fb0090] transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <a
+                href="#"
+                className="block hover:text-[#fb0090] transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  // Trigger cookie consent modal
+                  localStorage.removeItem("cookie-consent");
+                  window.location.reload();
+                }}
+              >
+                Cookie Settings
+              </a>
             </div>
           </div>
         </div>
-        <div className="border-t border-cream/20 mt-8 pt-8 text-center text-cream/60">
-          <p>&copy; 2025 Glow Aesthetics Lab. All rights reserved.</p>
+
+        <div className="border-t border-cream/20 mt-6 sm:mt-8 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+            <p className="text-cream/60 text-xs sm:text-sm text-center sm:text-left">
+              &copy; 2025 Glow Aesthetics Lab. All rights reserved.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-xs sm:text-sm text-cream/60">
+              <span>Hours: Mon-Fri 9AM-6PM, Sat 10AM-4PM</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
