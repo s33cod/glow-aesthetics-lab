@@ -454,6 +454,10 @@ export default function Treatments() {
           </p>
         </div>
       </footer>
+
+      {/* Fixed UI Components */}
+      <BackToTop />
+      <Chatbot />
     </div>
   );
 }
