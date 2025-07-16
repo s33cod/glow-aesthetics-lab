@@ -5,6 +5,7 @@ import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { TreatmentModal } from "@/components/ui/treatment-modal";
+import { SEO } from "@/components/ui/seo";
 import { Calendar, Clock, Star, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -147,6 +148,12 @@ export default function Treatments() {
 
   return (
     <div className="min-h-screen bg-cream">
+      <SEO
+        title="Treatment Menu & Pricing - Glow Aesthetics Lab London"
+        description="Explore our comprehensive treatment menu including Botox (£299), dermal fillers (£599), chemical peels (£150), microneedling (£299) & laser treatments in Surrey Quays, London."
+        keywords="botox London prices, dermal fillers cost London, chemical peel London, microneedling London, laser hair removal London, aesthetic treatment prices, Surrey Quays beauty clinic"
+        url="https://glowaestheticslab.com/treatments"
+      />
       <Navigation />
 
       {/* Header with Background Image */}
