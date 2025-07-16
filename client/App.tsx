@@ -12,6 +12,8 @@ import Treatments from "./pages/Treatments";
 import Testimonials from "./pages/Testimonials";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 import Booking from "./pages/Booking";
 import NotFound from "./pages/NotFound";
 
