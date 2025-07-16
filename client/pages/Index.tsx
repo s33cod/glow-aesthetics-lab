@@ -87,12 +87,12 @@ export default function Index() {
                 >
                   Home
                 </a>
-                <a
-                  href="#treatments"
+                <Link
+                  to="/treatments"
                   className="text-muted-foreground hover:text-gold transition-colors font-medium"
                 >
                   Treatments
-                </a>
+                </Link>
                 <a
                   href="#about"
                   className="text-muted-foreground hover:text-gold transition-colors font-medium"
