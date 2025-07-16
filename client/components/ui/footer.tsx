@@ -109,30 +109,35 @@ export function Footer() {
               <Link
                 to="/booking"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Book Appointment
               </Link>
               <Link
                 to="/treatments"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Treatment Menu
               </Link>
               <Link
                 to="/about"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 About Olivene D
               </Link>
               <Link
                 to="/contact"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Contact Us
               </Link>
               <Link
                 to="/gallery"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Gallery
               </Link>
@@ -148,12 +153,14 @@ export function Footer() {
               <Link
                 to="/terms"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Terms & Conditions
               </Link>
               <Link
                 to="/privacy"
                 className="block hover:text-[#fb0090] transition-colors"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Privacy Policy
               </Link>
