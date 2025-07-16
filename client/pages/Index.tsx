@@ -419,6 +419,181 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Before & After Results */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Real Results, Real Transformations
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              See the stunning transformations our clients have achieved with
+              our expert treatments
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Botox Treatment",
+                description:
+                  "Forehead lines reduction - 2 weeks post treatment",
+                before:
+                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+              {
+                title: "Dermal Fillers",
+                description: "Lip enhancement - Natural volume increase",
+                before:
+                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+              {
+                title: "Chemical Peel",
+                description: "Skin rejuvenation - 6 weeks post treatment",
+                before:
+                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+            ].map((result, index) => (
+              <div key={index} className="bg-cream rounded-2xl p-6 shadow-lg">
+                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
+                  {result.title}
+                </h3>
+                <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground mb-2 text-center uppercase tracking-wide">
+                      Before
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.before}
+                        alt="Before treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-[#fb0090] mb-2 text-center uppercase tracking-wide">
+                      After
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.after}
+                        alt="After treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-center text-muted-foreground text-sm">
+                  {result.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
+              asChild
+            >
+              <Link to="/gallery">View More Results</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Don't just take our word for it - hear from our satisfied clients
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sarah Johnson",
+                treatment: "Botox & Dermal Fillers",
+                rating: 5,
+                text: "Absolutely amazing experience! Olivene made me feel so comfortable and the results are exactly what I wanted. My skin looks naturally refreshed and I couldn't be happier.",
+                image:
+                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=150",
+              },
+              {
+                name: "Emma Wilson",
+                treatment: "Chemical Peel",
+                rating: 5,
+                text: "The best investment I've made for my skin. The team at Glow Aesthetics Lab is professional, knowledgeable, and truly cares about their clients. Highly recommend!",
+                image:
+                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=150",
+              },
+              {
+                name: "Lisa Thompson",
+                treatment: "Laser Hair Removal",
+                rating: 5,
+                text: "I've been to several clinics before, but none compare to Glow Aesthetics Lab. The quality of service and attention to detail is exceptional. Thank you for giving me my confidence back!",
+                image:
+                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=150",
+              },
+            ].map((testimonial, index) => (
+              <div
+                key={index}
+                className="bg-background rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-gold fill-current" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                  "{testimonial.text}"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#fb0090]/20 to-gold/20 rounded-full mr-4 overflow-hidden">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.treatment}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
+              asChild
+            >
+              <Link to="/testimonials">Read More Reviews</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Instagram Feed */}
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
