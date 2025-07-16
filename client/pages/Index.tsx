@@ -8,21 +8,11 @@ import { Link } from "react-router-dom";
 import {
   Calendar,
   MapPin,
-  Phone,
   Star,
   Clock,
   Award,
   Users,
   Shield,
-  Home,
-  User,
-  Stethoscope,
-  MessageSquare,
-  Camera,
-  Mail,
-  Facebook,
-  Instagram,
-  Music,
 } from "lucide-react";
 
 export default function Index() {
@@ -80,84 +70,9 @@ export default function Index() {
     },
   ];
 
-    return (
+  return (
     <div className="min-h-screen bg-cream">
       <Navigation />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <img
-                src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                alt="Glow Aesthetics Lab"
-                className="h-12 w-auto"
-              />
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <a
-                  href="#"
-                  className="text-[#fb0090] hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <Home className="h-4 w-4 mr-2" />
-                  Home
-                </a>
-                <Link
-                  to="/about"
-                  className="text-muted-foreground hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <User className="h-4 w-4 mr-2" />
-                  About
-                </Link>
-                <Link
-                  to="/treatments"
-                  className="text-muted-foreground hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <Stethoscope className="h-4 w-4 mr-2" />
-                  Treatments
-                </Link>
-                <Link
-                  to="/testimonials"
-                  className="text-muted-foreground hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  Testimonials
-                </Link>
-                <Link
-                  to="/gallery"
-                  className="text-muted-foreground hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <Camera className="h-4 w-4 mr-2" />
-                  Gallery
-                </Link>
-                <Link
-                  to="/contact"
-                  className="text-muted-foreground hover:text-[#fb0090] transition-colors font-medium flex items-center"
-                >
-                  <Mail className="h-4 w-4 mr-2" />
-                  Contact
-                </Link>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <div className="hidden sm:flex items-center text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 mr-2" />
-                <a
-                  href="tel:+447904949580"
-                  className="hover:text-gold transition-colors"
-                >
-                  +44 7904 949580
-                </a>
-              </div>
-              <Button
-                className="bg-gold hover:bg-gold/90 text-white font-semibold"
-                asChild
-              >
-                <Link to="/booking">Book Appointment</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section with Video */}
       <section className="relative h-screen overflow-hidden">
@@ -215,7 +130,7 @@ export default function Index() {
               <div className="flex items-center space-x-6 text-sm text-white/80">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
-                  <span>Downtown Location</span>
+                  <span>Surrey Quays, LONDON</span>
                 </div>
                 <div className="flex items-center">
                   <Star className="h-4 w-4 mr-1 text-gold fill-current" />
@@ -253,8 +168,8 @@ export default function Index() {
               const Icon = feature.icon;
               return (
                 <div key={index} className="text-center group">
-                  <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 transition-colors">
-                    <Icon className="h-8 w-8 text-gold" />
+                  <div className="w-16 h-16 bg-[#fb0090]/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-[#fb0090]/20 transition-colors">
+                    <Icon className="h-8 w-8 text-[#fb0090]" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">
                     {feature.title}
@@ -265,100 +180,6 @@ export default function Index() {
                 </div>
               );
             })}
-          </div>
-        </div>
-      </section>
-
-      {/* Treatments Overview */}
-      <section id="treatments" className="py-20 bg-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-4">
-              Real Results, Real Transformations
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              See the stunning transformations our clients have achieved with
-              our expert treatments
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Botox Treatment",
-                description:
-                  "Forehead lines reduction - 2 weeks post treatment",
-                before:
-                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
-                after:
-                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
-              },
-              {
-                title: "Dermal Fillers",
-                description: "Lip enhancement - Natural volume increase",
-                before:
-                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
-                after:
-                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
-              },
-              {
-                title: "Chemical Peel",
-                description: "Skin rejuvenation - 6 weeks post treatment",
-                before:
-                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=400",
-                after:
-                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400",
-              },
-            ].map((result, index) => (
-              <div
-                key={index}
-                className="bg-background rounded-2xl p-6 shadow-lg"
-              >
-                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
-                  {result.title}
-                </h3>
-                <div className="grid grid-cols-2 gap-3 mb-4">
-                  <div>
-                    <p className="text-xs font-semibold text-muted-foreground mb-2 text-center uppercase tracking-wide">
-                      Before
-                    </p>
-                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
-                      <img
-                        src={result.before}
-                        alt="Before treatment"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold text-gold mb-2 text-center uppercase tracking-wide">
-                      After
-                    </p>
-                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
-                      <img
-                        src={result.after}
-                        alt="After treatment"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <p className="text-center text-muted-foreground text-sm">
-                  {result.description}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-gold text-gold hover:bg-gold/10"
-              asChild
-            >
-              <Link to="/gallery">View More Results</Link>
-            </Button>
           </div>
         </div>
       </section>
@@ -395,13 +216,13 @@ export default function Index() {
                   {treatment.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-gold font-semibold">
+                  <span className="text-[#fb0090] font-semibold">
                     {treatment.price}
                   </span>
                   <Button
                     size="sm"
                     variant="outline"
-                    className="border-gold text-gold hover:bg-gold/10"
+                    className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
                   >
                     Learn More
                   </Button>
@@ -412,7 +233,7 @@ export default function Index() {
           <div className="text-center mt-12">
             <Button
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-white font-semibold"
+              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
               asChild
             >
               <Link to="/treatments">View All Treatments & Pricing</Link>
@@ -610,7 +431,7 @@ export default function Index() {
               href="https://www.instagram.com/glow_aesthetics_lab"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-gold hover:text-gold/80 transition-colors font-semibold"
+              className="inline-flex items-center text-[#fb0090] hover:text-[#fb0090]/80 transition-colors font-semibold"
             >
               @glow_aesthetics_lab
             </a>
@@ -645,7 +466,7 @@ export default function Index() {
           <div className="text-center mt-8">
             <Button
               variant="outline"
-              className="border-gold text-gold hover:bg-gold/10"
+              className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
               asChild
             >
               <a
@@ -661,7 +482,7 @@ export default function Index() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-gold/10 via-warm-beige/20 to-gold-light/10">
+      <section className="py-20 bg-gradient-to-br from-[#fb0090]/10 via-gold/10 to-warm-beige/20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-4">
             Ready to Begin Your Journey?
@@ -672,7 +493,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold px-8"
               asChild
             >
               <Link to="/booking">
@@ -684,108 +505,15 @@ export default function Index() {
               size="lg"
               variant="outline"
               className="border-gold text-gold hover:bg-gold/10"
+              asChild
             >
-              <Phone className="mr-2 h-5 w-5" />
-              Call +44 7904 949580
+              <a href="tel:+447904949580">Call +44 7904 949580</a>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-bronze text-cream py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <img
-                src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                alt="Glow Aesthetics Lab"
-                className="h-12 w-auto mb-4 brightness-0 invert"
-              />
-              <p className="text-cream/80 mb-4">
-                Premium aesthetic treatments in a luxury setting. Owned and
-                operated by Olivene D.
-              </p>
-              <div className="flex items-center space-x-4 text-cream/60">
-                <span>Follow us:</span>
-                <div className="flex space-x-3">
-                  <a
-                    href="https://www.facebook.com/glowaestheticslab"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-[#fb0090] transition-colors"
-                  >
-                    <Facebook className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/glow_aesthetics_lab"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-[#fb0090] transition-colors"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="https://www.tiktok.com/@glowaestheticslab"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-[#fb0090] transition-colors"
-                  >
-                    <Music className="h-5 w-5" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Contact Info</h3>
-              <div className="space-y-2 text-cream/80">
-                <div className="flex items-center">
-                  <Phone className="h-4 w-4 mr-2" />
-                  <a
-                    href="tel:+447904949580"
-                    className="hover:text-[#fb0090] transition-colors"
-                  >
-                    +44 7904 949580
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="h-4 w-4 mr-2" />
-                  <span>123 Beauty Ave, Downtown</span>
-                </div>
-                <div>
-                  <span>Email: </span>
-                  <a
-                    href="mailto:info@glowaestheticslab.com"
-                    className="hover:text-[#fb0090] transition-colors"
-                  >
-                    info@glowaestheticslab.com
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-4">Quick Links</h3>
-              <div className="space-y-2 text-cream/80">
-                <a href="#" className="block hover:text-gold transition-colors">
-                  Book Appointment
-                </a>
-                <a href="#" className="block hover:text-gold transition-colors">
-                  Treatment Menu
-                </a>
-                <a href="#" className="block hover:text-gold transition-colors">
-                  About Olivene D
-                </a>
-                <a href="#" className="block hover:text-gold transition-colors">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-cream/20 mt-8 pt-8 text-center text-cream/60">
-            <p>&copy; 2025 Glow Aesthetics Lab. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Fixed UI Components */}
       <BackToTop />
