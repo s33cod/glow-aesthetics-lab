@@ -201,23 +201,30 @@ export default function Treatments() {
         </div>
       </nav>
 
-      {/* Header */}
-      <section className="bg-gradient-to-br from-gold/10 via-warm-beige/20 to-gold-light/10 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Header with Background Image */}
+      <section className="relative h-64 bg-gradient-to-br from-gold/20 to-warm-beige/30 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/4046735/pexels-photo-4046735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex items-center h-full">
           <div className="flex items-center mb-6">
             <Link
               to="/"
-              className="flex items-center text-muted-foreground hover:text-gold transition-colors mr-4"
+              className="flex items-center text-white/80 hover:text-gold transition-colors mr-4"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Home
             </Link>
           </div>
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <div className="text-center w-full">
+            <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
               Treatment Menu & Pricing
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Explore our comprehensive range of premium aesthetic treatments,
               each designed to enhance your natural beauty
             </p>
