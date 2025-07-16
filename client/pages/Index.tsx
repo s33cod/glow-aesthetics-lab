@@ -257,6 +257,100 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Before & After Results */}
+      <section className="py-20 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Real Results, Real Transformations
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              See the stunning transformations our clients have achieved with
+              our expert treatments
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Botox Treatment",
+                description:
+                  "Forehead lines reduction - 2 weeks post treatment",
+                before:
+                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+              {
+                title: "Dermal Fillers",
+                description: "Lip enhancement - Natural volume increase",
+                before:
+                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+              {
+                title: "Chemical Peel",
+                description: "Skin rejuvenation - 6 weeks post treatment",
+                before:
+                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=400",
+                after:
+                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=400",
+              },
+            ].map((result, index) => (
+              <div
+                key={index}
+                className="bg-background rounded-2xl p-6 shadow-lg"
+              >
+                <h3 className="text-xl font-semibold text-foreground mb-4 text-center">
+                  {result.title}
+                </h3>
+                <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground mb-2 text-center uppercase tracking-wide">
+                      Before
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.before}
+                        alt="Before treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-gold mb-2 text-center uppercase tracking-wide">
+                      After
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.after}
+                        alt="After treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p className="text-center text-muted-foreground text-sm">
+                  {result.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-gold text-gold hover:bg-gold/10"
+              asChild
+            >
+              <Link to="/gallery">View More Results</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Treatments Overview */}
       <section id="treatments" className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
