@@ -169,8 +169,11 @@ export default function Treatments() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <Button className="bg-gold hover:bg-gold/90 text-white font-semibold">
-                Book Consultation
+              <Button
+                className="bg-gold hover:bg-gold/90 text-white font-semibold"
+                asChild
+              >
+                <Link to="/booking">Book Consultation</Link>
               </Button>
             </div>
           </div>
@@ -249,9 +252,14 @@ export default function Treatments() {
                       </ul>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <Button className="w-full bg-gold hover:bg-gold/90 text-white font-semibold">
-                        <Calendar className="mr-2 h-4 w-4" />
-                        Book This Treatment
+                      <Button
+                        className="w-full bg-gold hover:bg-gold/90 text-white font-semibold"
+                        asChild
+                      >
+                        <Link to="/booking">
+                          <Calendar className="mr-2 h-4 w-4" />
+                          Book This Treatment
+                        </Link>
                       </Button>
                       <Button
                         variant="outline"
@@ -281,9 +289,12 @@ export default function Treatments() {
           <Button
             size="lg"
             className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+            asChild
           >
-            <Calendar className="mr-2 h-5 w-5" />
-            Book Free Consultation
+            <Link to="/booking">
+              <Calendar className="mr-2 h-5 w-5" />
+              Book Free Consultation
+            </Link>
           </Button>
         </div>
       </section>
