@@ -1,5 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowLeft, Clock, User, Mail, Phone } from "lucide-react";
+import {
+  Calendar,
+  ArrowLeft,
+  Clock,
+  User,
+  Mail,
+  Phone,
+  Home,
+  Stethoscope,
+  MessageSquare,
+  Camera,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Booking() {
@@ -22,26 +33,37 @@ export default function Booking() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link
                   to="/"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Home className="h-4 w-4 mr-2" />
                   Home
                 </Link>
                 <Link
                   to="/treatments"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Stethoscope className="h-4 w-4 mr-2" />
                   Treatments
                 </Link>
-                <a
-                  href="#about"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                <Link
+                  to="/testimonials"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
-                  About
-                </a>
+                  <MessageSquare className="h-4 w-4 mr-2" />
+                  Testimonials
+                </Link>
+                <Link
+                  to="/gallery"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
+                >
+                  <Camera className="h-4 w-4 mr-2" />
+                  Gallery
+                </Link>
                 <a
                   href="#contact"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium"
+                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
                 >
+                  <Mail className="h-4 w-4 mr-2" />
                   Contact
                 </a>
               </div>
@@ -158,12 +180,26 @@ export default function Booking() {
             <div>
               <Phone className="h-8 w-8 text-gold mx-auto mb-3" />
               <h4 className="font-semibold text-foreground mb-2">Phone</h4>
-              <p className="text-muted-foreground">(555) 123-4567</p>
+              <p className="text-muted-foreground">
+                <a
+                  href="tel:+447904949580"
+                  className="hover:text-gold transition-colors"
+                >
+                  +44 7904 949580
+                </a>
+              </p>
             </div>
             <div>
               <Mail className="h-8 w-8 text-gold mx-auto mb-3" />
               <h4 className="font-semibold text-foreground mb-2">Email</h4>
-              <p className="text-muted-foreground">charles@consultant.com</p>
+              <p className="text-muted-foreground">
+                <a
+                  href="mailto:info@glowaestheticslab.com"
+                  className="hover:text-gold transition-colors"
+                >
+                  info@glowaestheticslab.com
+                </a>
+              </p>
             </div>
             <div>
               <Clock className="h-8 w-8 text-gold mx-auto mb-3" />
@@ -182,7 +218,7 @@ export default function Booking() {
       <footer className="bg-bronze text-cream py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-cream/60">
-            &copy; 2024 Glow Aesthetics Lab. All rights reserved.
+            &copy; 2025 Glow Aesthetics Lab. All rights reserved.
           </p>
         </div>
       </footer>
