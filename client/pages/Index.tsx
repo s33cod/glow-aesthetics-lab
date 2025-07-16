@@ -14,6 +14,9 @@ import {
   MessageSquare,
   Camera,
   Mail,
+  Facebook,
+  Instagram,
+  Music,
 } from "lucide-react";
 
 export default function Index() {
