@@ -469,13 +469,31 @@ export default function Index() {
           {/* Instagram Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=300",
-              "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=300",
-              "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=300",
-              "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=300",
-              "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=300",
-              "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=300",
-            ].map((src, index) => (
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0aaed9e3c0bc4af1824e9f223c554dbf?format=webp&width=300",
+                alt: "Skin rejuvenation results",
+              },
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fc82837296ec840dcadde9932b5ec0112?format=webp&width=300",
+                alt: "HydroFiller+ treatment",
+              },
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fcf33cb88d8c64324bb2f795f89747654?format=webp&width=300",
+                alt: "Microneedling before treatment",
+              },
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fa17cffd0404f43c19b369d4aadf23bf8?format=webp&width=300",
+                alt: "Microneedling after treatment",
+              },
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0f93fbf6d06343d5bcc3902c307f9a14?format=webp&width=300",
+                alt: "Lip enhancement results",
+              },
+              {
+                src: "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fb297d62335e842ad8a4b49f5d2260c7c?format=webp&width=300",
+                alt: "Anti-aging neck treatment",
+              },
+            ].map((item, index) => (
               <a
                 key={index}
                 href="https://www.instagram.com/glow_aesthetics_lab"
@@ -484,8 +502,8 @@ export default function Index() {
                 className="group block aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden hover:scale-105 transition-transform"
               >
                 <img
-                  src={src}
-                  alt={`Instagram post ${index + 1}`}
+                  src={item.src}
+                  alt={item.alt}
                   className="w-full h-full object-cover group-hover:opacity-80 transition-opacity"
                 />
               </a>
