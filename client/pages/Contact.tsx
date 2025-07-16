@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { Chatbot } from "@/components/ui/chatbot";
+import { CookieConsent } from "@/components/ui/cookie-consent";
 import {
   ArrowLeft,
   Phone,
@@ -645,6 +646,7 @@ Please respond to this inquiry promptly.
       {/* Fixed UI Components */}
       <BackToTop />
       <Chatbot />
+      <CookieConsent />
     </div>
   );
 }
