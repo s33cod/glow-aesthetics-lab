@@ -262,8 +262,9 @@ export default function Index() {
             <Button
               size="lg"
               className="bg-gold hover:bg-gold/90 text-white font-semibold"
+              asChild
             >
-              View All Treatments & Pricing
+              <Link to="/treatments">View All Treatments & Pricing</Link>
             </Button>
           </div>
         </div>
