@@ -16,21 +16,21 @@ import { Link } from "react-router-dom";
 export default function Gallery() {
   const galleryCategories = [
     {
-      title: "Before & After - Botox",
+      title: "Before & After - Skin Rejuvenation",
       images: [
         {
           before:
-            "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0aaed9e3c0bc4af1824e9f223c554dbf?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Forehead lines reduction - 2 weeks post treatment",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0aaed9e3c0bc4af1824e9f223c554dbf?format=webp&width=400",
+          description: "Skin texture improvement with advanced treatments",
         },
         {
           before:
-            "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fcf33cb88d8c64324bb2f795f89747654?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Crow's feet treatment - 3 weeks post treatment",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fa17cffd0404f43c19b369d4aadf23bf8?format=webp&width=400",
+          description: "Microneedling results - One session progress",
         },
       ],
     },
@@ -39,36 +39,36 @@ export default function Gallery() {
       images: [
         {
           before:
-            "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fc82837296ec840dcadde9932b5ec0112?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Lip enhancement - Natural volume increase",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fc82837296ec840dcadde9932b5ec0112?format=webp&width=400",
+          description: "HydroFiller+ treatment - Natural enhancement",
         },
         {
           before:
-            "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0f93fbf6d06343d5bcc3902c307f9a14?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Cheek augmentation - 1 month post treatment",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F0f93fbf6d06343d5bcc3902c307f9a14?format=webp&width=400",
+          description: "Lip enhancement - Volume and definition",
         },
       ],
     },
     {
-      title: "Before & After - Skin Rejuvenation",
+      title: "Before & After - Anti-Aging Treatments",
       images: [
         {
           before:
-            "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fb297d62335e842ad8a4b49f5d2260c7c?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Chemical peel results - 6 weeks post treatment",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fb297d62335e842ad8a4b49f5d2260c7c?format=webp&width=400",
+          description: "Neck and jawline rejuvenation results",
         },
         {
           before:
-            "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=400",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fad3e74e66b8949959ba57fdca82c0a6e?format=webp&width=400",
           after:
-            "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=400",
-          description: "Microneedling series - 3 months post treatment",
+            "https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Fad3e74e66b8949959ba57fdca82c0a6e?format=webp&width=400",
+          description: "Body contouring and measurement results",
         },
       ],
     },
