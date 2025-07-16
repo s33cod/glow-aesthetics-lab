@@ -4,6 +4,7 @@ import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
+import { TreatmentModal } from "@/components/ui/treatment-modal";
 import { Link } from "react-router-dom";
 import {
   Calendar,
@@ -14,8 +15,35 @@ import {
   Users,
   Shield,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Index() {
+  const [selectedTreatment, setSelectedTreatment] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleLearnMore = (treatment: any) => {
+    // Convert homepage treatment to modal format
+    const modalTreatment = {
+      name: treatment.name,
+      description: treatment.description,
+      duration: "30-60 minutes", // Default duration
+      price: treatment.price,
+      details: [
+        "Professional consultation included",
+        "Personalized treatment plan",
+        "Follow-up care guidance",
+        "Proven, safe techniques",
+      ],
+    };
+    setSelectedTreatment(modalTreatment);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedTreatment(null);
+  };
+
   const treatments = [
     {
       name: "Botox & Dermal Fillers",
@@ -223,6 +251,7 @@ export default function Index() {
                     size="sm"
                     variant="outline"
                     className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
+                    onClick={() => handleLearnMore(treatment)}
                   >
                     Learn More
                   </Button>
@@ -514,6 +543,15 @@ export default function Index() {
       </section>
 
       <Footer />
+
+      {/* Treatment Detail Modal */}
+      {selectedTreatment && (
+        <TreatmentModal
+          treatment={selectedTreatment}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
+      )}
 
       {/* Fixed UI Components */}
       <BackToTop />
