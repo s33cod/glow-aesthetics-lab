@@ -327,6 +327,88 @@ export default function Treatments() {
         </div>
       </section>
 
+      {/* Before & After Results */}
+      <section className="py-16 bg-cream">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Treatment Results
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              See the real transformations achieved with our expert treatments
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Botox",
+                before:
+                  "https://images.pexels.com/photos/4046658/pexels-photo-4046658.jpeg?auto=compress&cs=tinysrgb&w=300",
+                after:
+                  "https://images.pexels.com/photos/4046640/pexels-photo-4046640.jpeg?auto=compress&cs=tinysrgb&w=300",
+              },
+              {
+                title: "Lip Fillers",
+                before:
+                  "https://images.pexels.com/photos/4046659/pexels-photo-4046659.jpeg?auto=compress&cs=tinysrgb&w=300",
+                after:
+                  "https://images.pexels.com/photos/4046641/pexels-photo-4046641.jpeg?auto=compress&cs=tinysrgb&w=300",
+              },
+              {
+                title: "Chemical Peel",
+                before:
+                  "https://images.pexels.com/photos/4015620/pexels-photo-4015620.jpeg?auto=compress&cs=tinysrgb&w=300",
+                after:
+                  "https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=300",
+              },
+              {
+                title: "Microneedling",
+                before:
+                  "https://images.pexels.com/photos/5069432/pexels-photo-5069432.jpeg?auto=compress&cs=tinysrgb&w=300",
+                after:
+                  "https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=300",
+              },
+            ].map((result, index) => (
+              <div
+                key={index}
+                className="bg-background rounded-xl p-4 shadow-md"
+              >
+                <h4 className="font-semibold text-foreground mb-3 text-center text-sm">
+                  {result.title}
+                </h4>
+                <div className="space-y-2">
+                  <div>
+                    <p className="text-xs text-muted-foreground mb-1 text-center uppercase tracking-wide">
+                      Before
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.before}
+                        alt="Before treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xs text-gold mb-1 text-center uppercase tracking-wide">
+                      After
+                    </p>
+                    <div className="aspect-square bg-gradient-to-br from-gold/10 to-warm-beige/20 rounded-lg overflow-hidden">
+                      <img
+                        src={result.after}
+                        alt="After treatment"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Policies */}
       <section className="py-12 bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
