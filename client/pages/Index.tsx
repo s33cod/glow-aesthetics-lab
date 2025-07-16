@@ -579,7 +579,7 @@ export default function Index() {
                   <span>Email: </span>
                   <a
                     href="mailto:info@glowaestheticslab.com"
-                    className="hover:text-gold transition-colors"
+                    className="hover:text-[#fb0090] transition-colors"
                   >
                     info@glowaestheticslab.com
                   </a>
