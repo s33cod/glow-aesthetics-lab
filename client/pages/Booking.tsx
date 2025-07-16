@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
+import { Navigation } from "@/components/ui/navigation";
+import { Footer } from "@/components/ui/footer";
 import {
   Calendar,
   ArrowLeft,
@@ -9,10 +11,6 @@ import {
   User,
   Mail,
   Phone,
-  Home,
-  Stethoscope,
-  MessageSquare,
-  Camera,
   CheckCircle,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -149,67 +147,10 @@ Please confirm this appointment by contacting the client directly.
     setIsSubmitted(true);
   };
 
-  const NavigationComponent = () => (
-    <nav className="bg-background/95 backdrop-blur-md border-b border-gold/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
-            <Link to="/">
-              <img
-                src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                alt="Glow Aesthetics Lab"
-                className="h-12 w-auto"
-              />
-            </Link>
-          </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              <Link
-                to="/"
-                className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-              >
-                <Home className="h-4 w-4 mr-2" />
-                Home
-              </Link>
-              <Link
-                to="/treatments"
-                className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-              >
-                <Stethoscope className="h-4 w-4 mr-2" />
-                Treatments
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-              >
-                <MessageSquare className="h-4 w-4 mr-2" />
-                Testimonials
-              </Link>
-              <Link
-                to="/gallery"
-                className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-              >
-                <Camera className="h-4 w-4 mr-2" />
-                Gallery
-              </Link>
-              <a
-                href="#contact"
-                className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-              >
-                <Mail className="h-4 w-4 mr-2" />
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
-
   if (isSubmitted) {
     return (
       <div className="min-h-screen bg-cream">
-        <NavigationComponent />
+        <Navigation />
 
         <section className="py-20">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -259,6 +200,8 @@ Please confirm this appointment by contacting the client directly.
           </div>
         </section>
 
+        <Footer />
+
         <BackToTop />
         <Chatbot />
         <CookieConsent />
@@ -268,7 +211,7 @@ Please confirm this appointment by contacting the client directly.
 
   return (
     <div className="min-h-screen bg-cream">
-      <NavigationComponent />
+      <Navigation />
 
       {/* Header with Background Image */}
       <section className="relative h-64 bg-gradient-to-br from-gold/20 to-warm-beige/30 overflow-hidden">
@@ -532,18 +475,12 @@ Please confirm this appointment by contacting the client directly.
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-bronze text-cream py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-cream/60">
-            &copy; 2025 Glow Aesthetics Lab. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Fixed UI Components */}
       <BackToTop />
       <Chatbot />
+      <CookieConsent />
     </div>
   );
 }
