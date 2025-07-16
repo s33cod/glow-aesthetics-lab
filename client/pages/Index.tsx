@@ -566,7 +566,7 @@ export default function Index() {
                   <Phone className="h-4 w-4 mr-2" />
                   <a
                     href="tel:+447904949580"
-                    className="hover:text-gold transition-colors"
+                    className="hover:text-[#fb0090] transition-colors"
                   >
                     +44 7904 949580
                   </a>
