@@ -246,14 +246,7 @@ export default function Gallery() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-bronze text-cream py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-cream/60">
-            &copy; 2025 Glow Aesthetics Lab. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Fixed UI Components */}
       <BackToTop />
