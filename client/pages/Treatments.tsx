@@ -4,17 +4,7 @@ import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
-import {
-  Calendar,
-  Clock,
-  Star,
-  ArrowLeft,
-  Home,
-  Stethoscope,
-  MessageSquare,
-  Camera,
-  Mail,
-} from "lucide-react";
+import { Calendar, Clock, Star, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Treatments() {
@@ -140,70 +130,9 @@ export default function Treatments() {
     },
   ];
 
-    return (
+  return (
     <div className="min-h-screen bg-cream">
       <Navigation />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link to="/">
-                <img
-                  src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                  alt="Glow Aesthetics Lab"
-                  className="h-12 w-auto"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link
-                  to="/"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Home className="h-4 w-4 mr-2" />
-                  Home
-                </Link>
-                <a
-                  href="#"
-                  className="text-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Stethoscope className="h-4 w-4 mr-2" />
-                  Treatments
-                </a>
-                <Link
-                  to="/testimonials"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  Testimonials
-                </Link>
-                <Link
-                  to="/gallery"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Camera className="h-4 w-4 mr-2" />
-                  Gallery
-                </Link>
-                <a
-                  href="#contact"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Mail className="h-4 w-4 mr-2" />
-                  Contact
-                </a>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button
-                className="bg-gold hover:bg-gold/90 text-white font-semibold"
-                asChild
-              >
-                <Link to="/booking"> Book Appointment</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Header with Background Image */}
       <section className="relative h-64 bg-gradient-to-br from-gold/20 to-warm-beige/30 overflow-hidden">
@@ -448,17 +377,10 @@ export default function Treatments() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-bronze text-cream py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-cream/60">
-            &copy; 2025 Glow Aesthetics Lab. All rights reserved.
-          </p>
-        </div>
-            </footer>
+      <Footer />
 
       {/* Fixed UI Components */}
-            <BackToTop />
+      <BackToTop />
       <Chatbot />
       <CookieConsent />
     </div>
