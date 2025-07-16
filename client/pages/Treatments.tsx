@@ -4,10 +4,25 @@ import { Chatbot } from "@/components/ui/chatbot";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
+import { TreatmentModal } from "@/components/ui/treatment-modal";
 import { Calendar, Clock, Star, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Treatments() {
+  const [selectedTreatment, setSelectedTreatment] = useState<any>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleLearnMore = (treatment: any) => {
+    setSelectedTreatment(treatment);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedTreatment(null);
+  };
+
   const treatmentCategories = [
     {
       name: "Injectables",
@@ -225,6 +240,7 @@ export default function Treatments() {
                       <Button
                         variant="outline"
                         className="w-full border-gold text-gold hover:bg-gold/10"
+                        onClick={() => handleLearnMore(treatment)}
                       >
                         Learn More
                       </Button>
@@ -378,6 +394,15 @@ export default function Treatments() {
       </section>
 
       <Footer />
+
+      {/* Treatment Detail Modal */}
+      {selectedTreatment && (
+        <TreatmentModal
+          treatment={selectedTreatment}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
+      )}
 
       {/* Fixed UI Components */}
       <BackToTop />
