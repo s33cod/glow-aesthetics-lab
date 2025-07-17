@@ -56,66 +56,13 @@ export default function Testimonials() {
 
   return (
     <div className="min-h-screen bg-cream">
-      {/* Navigation */}
-      <nav className="bg-background/95 backdrop-blur-md border-b border-gold/20 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <Link to="/">
-                <img
-                  src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
-                  alt="Glow Aesthetics Lab"
-                  className="h-12 w-auto"
-                />
-              </Link>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link
-                  to="/"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Home className="h-4 w-4 mr-2" />
-                  Home
-                </Link>
-                <Link
-                  to="/treatments"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Stethoscope className="h-4 w-4 mr-2" />
-                  Treatments
-                </Link>
-                <a
-                  href="#"
-                  className="text-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <MessageSquare className="h-4 w-4 mr-2" />
-                  Testimonials
-                </a>
-                <Link
-                  to="/gallery"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Camera className="h-4 w-4 mr-2" />
-                  Gallery
-                </Link>
-                <a
-                  href="#contact"
-                  className="text-muted-foreground hover:text-gold transition-colors font-medium flex items-center"
-                >
-                  <Mail className="h-4 w-4 mr-2" />
-                  Contact
-                </a>
-              </div>
-            </div>
-            <div className="flex items-center space-x-4">
-              <Button className="bg-gold hover:bg-gold/90 text-white font-semibold">
-                Book Appointment
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <SEO
+        title="Client Testimonials - Glow Aesthetics Lab London"
+        description="Read genuine client reviews and testimonials about our aesthetic treatments. See why clients love Glow Aesthetics Lab in Surrey Quays, London."
+        keywords="client testimonials London, aesthetic treatment reviews, botox reviews London, dermal filler testimonials, Surrey Quays beauty reviews"
+        url="https://glowaestheticslab.com/testimonials"
+      />
+      <Navigation />
 
       {/* Header with Background Image */}
       <section className="relative h-64 bg-gradient-to-br from-gold/20 to-warm-beige/30 overflow-hidden">
