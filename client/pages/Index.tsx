@@ -103,7 +103,7 @@ export default function Index() {
       <Navigation />
 
       {/* Hero Section with Video */}
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative min-h-screen lg:h-screen overflow-hidden">
         {/* Video Background */}
         <video
           autoPlay
@@ -123,39 +123,39 @@ export default function Index() {
         <div className="absolute inset-0 bg-black/40" />
 
         {/* Content */}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-            <div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen lg:h-full flex items-center py-8 lg:py-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-4 lg:mb-6 leading-tight">
                 Reveal Your
                 <span className="text-gold block">Natural Glow</span>
               </h1>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              <p className="text-lg sm:text-xl text-white/90 mb-6 lg:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Experience premium aesthetic treatments in a luxurious,
                 welcoming environment. Our expert team is dedicated to helping
                 you look and feel your absolute best.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 mb-6 lg:mb-8 justify-center lg:justify-start">
                 <Button
                   size="lg"
-                  className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+                  className="bg-gold hover:bg-gold/90 text-white font-semibold px-6 lg:px-8 w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/booking">
-                    <Calendar className="mr-2 h-5 w-5" />
+                    <Calendar className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
                     Book Your Appointment
                   </Link>
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white text-white hover:bg-white/10 w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/treatments">View Treatments</Link>
                 </Button>
               </div>
-              <div className="flex items-center space-x-6 text-sm text-white/80">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-white/80">
                 <div className="flex items-center">
                   <MapPin className="h-4 w-4 mr-1" />
                   <span>Surrey Quays, LONDON</span>
@@ -166,12 +166,12 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="relative flex justify-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-8">
+            <div className="relative flex justify-center order-1 lg:order-2 mb-6 lg:mb-0">
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 lg:p-8">
                 <img
                   src="https://cdn.builder.io/api/v1/assets/103648a78fd24251870681fe3bc208a8/gal-logox500-620a4a?format=webp&width=800"
                   alt="Glow Aesthetics Lab"
-                  className="w-64 h-auto opacity-90"
+                  className="w-32 sm:w-48 lg:w-64 h-auto opacity-90"
                 />
               </div>
             </div>
