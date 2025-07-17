@@ -9,7 +9,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2F7fe33af5fbb54f1c926bc36781e78316?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F103648a78fd24251870681fe3bc208a8%2Faf227d6bdd714e58a3446e6c3afe9d70?format=webp&width=800"
               alt="Glow Aesthetics Lab"
               className="h-12 sm:h-16 w-auto mb-4"
             />
