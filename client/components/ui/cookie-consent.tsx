@@ -59,7 +59,7 @@ export function CookieConsent() {
             <Button
               onClick={handleAccept}
               size="sm"
-              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white"
+              className="bg-[#fb0090] hover:bg-gold text-white"
             >
               Accept All
             </Button>
