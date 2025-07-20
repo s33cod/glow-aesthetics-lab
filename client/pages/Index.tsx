@@ -138,7 +138,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 mb-6 lg:mb-8 justify-center lg:justify-start">
                 <Button
                   size="lg"
-                  className="bg-gold hover:bg-gold/90 text-white font-semibold px-6 lg:px-8 w-full sm:w-auto"
+                  className="bg-gold hover:bg-[#fb0090] text-white font-semibold px-6 lg:px-8 w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/booking">
