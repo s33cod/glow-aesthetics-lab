@@ -49,7 +49,7 @@ export function Chatbot() {
       {/* Chatbot Toggle Button */}
       <Button
         onClick={toggleChat}
-        className="fixed bottom-4 left-4 z-50 bg-gold hover:bg-gold/90 text-white p-3 rounded-full shadow-lg transition-all duration-300"
+        className="fixed bottom-4 left-4 z-50 bg-gold hover:bg-[#fb0090] text-white p-3 rounded-full shadow-lg transition-all duration-300"
         size="icon"
       >
         <MessageCircle className="h-5 w-5" />
@@ -117,7 +117,7 @@ export function Chatbot() {
               <Button
                 onClick={sendMessage}
                 size="icon"
-                className="bg-gold hover:bg-gold/90 text-white h-9 w-9"
+                className="bg-gold hover:bg-[#fb0090] text-white h-9 w-9"
               >
                 <Send className="h-4 w-4" />
               </Button>
