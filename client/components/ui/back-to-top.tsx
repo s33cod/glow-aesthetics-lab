@@ -31,7 +31,7 @@ export function BackToTop() {
       {isVisible && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 z-50 bg-gold hover:bg-gold/90 text-white p-3 rounded-full shadow-lg transition-all duration-300"
+          className="fixed bottom-4 right-4 z-50 bg-gold hover:bg-[#fb0090] text-white p-3 rounded-full shadow-lg transition-all duration-300"
           size="icon"
         >
           <ArrowUp className="h-5 w-5" />
