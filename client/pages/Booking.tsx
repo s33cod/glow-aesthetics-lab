@@ -190,7 +190,7 @@ Please confirm this appointment by contacting the client directly.
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <Button
                   asChild
-                  className="bg-gold hover:bg-gold/90 text-white font-semibold"
+                  className="bg-gold hover:bg-[#fb0090] text-white font-semibold"
                 >
                   <Link to="/">Return Home</Link>
                 </Button>
@@ -429,7 +429,7 @@ Please confirm this appointment by contacting the client directly.
                 <Button
                   type="submit"
                   size="lg"
-                  className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+                  className="bg-gold hover:bg-[#fb0090] text-white font-semibold px-8"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
                   Request Appointment
