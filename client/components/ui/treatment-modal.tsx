@@ -104,7 +104,7 @@ export function TreatmentModal({
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t">
             <Button
-              className="flex-1 bg-gold hover:bg-gold/90 text-white font-semibold"
+              className="flex-1 bg-gold hover:bg-[#fb0090] text-white font-semibold"
               asChild
               onClick={onClose}
             >
@@ -115,7 +115,7 @@ export function TreatmentModal({
             </Button>
             <Button
               variant="outline"
-              className="flex-1 border-gold text-gold hover:bg-gold/10"
+              className="flex-1 border-gold text-gold hover:border-[#fb0090] hover:text-[#fb0090] hover:bg-[#fb0090]/10"
               onClick={onClose}
             >
               <ArrowRight className="mr-2 h-4 w-4" />
