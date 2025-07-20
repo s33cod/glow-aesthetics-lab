@@ -250,7 +250,7 @@ export default function Index() {
                   <Button
                     size="sm"
                     variant="outline"
-                    className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
+                    className="border-[#fb0090] text-[#fb0090] hover:border-gold hover:text-gold hover:bg-gold/10"
                     onClick={() => handleLearnMore(treatment)}
                   >
                     Learn More
@@ -262,7 +262,7 @@ export default function Index() {
           <div className="text-center mt-12">
             <Button
               size="lg"
-              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
+              className="bg-[#fb0090] hover:bg-gold text-white font-semibold"
               asChild
             >
               <Link to="/treatments">View All Treatments & Pricing</Link>
@@ -353,7 +353,7 @@ export default function Index() {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
+              className="border-[#fb0090] text-[#fb0090] hover:border-gold hover:text-gold hover:bg-gold/10"
               asChild
             >
               <Link to="/gallery">View More Results</Link>
@@ -437,7 +437,7 @@ export default function Index() {
           <div className="text-center mt-12">
             <Button
               size="lg"
-              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
+              className="bg-[#fb0090] hover:bg-gold text-white font-semibold"
               asChild
             >
               <Link to="/testimonials">Read More Reviews</Link>
@@ -513,7 +513,7 @@ export default function Index() {
           <div className="text-center mt-8">
             <Button
               variant="outline"
-              className="border-[#fb0090] text-[#fb0090] hover:bg-[#fb0090]/10"
+              className="border-[#fb0090] text-[#fb0090] hover:border-gold hover:text-gold hover:bg-gold/10"
               asChild
             >
               <a
@@ -540,7 +540,7 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold px-8"
+              className="bg-[#fb0090] hover:bg-gold text-white font-semibold px-8"
               asChild
             >
               <Link to="/booking">
@@ -551,7 +551,7 @@ export default function Index() {
             <Button
               size="lg"
               variant="outline"
-              className="border-gold text-gold hover:bg-gold/10"
+              className="border-gold text-gold hover:border-[#fb0090] hover:text-[#fb0090] hover:bg-[#fb0090]/10"
               asChild
             >
               <a href="tel:+447904949580">Call +44 7904 949580</a>
