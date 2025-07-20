@@ -158,7 +158,7 @@ export function CampaignManager() {
         </div>
         <Dialog open={showCreateDialog} onOpenChange={setShowCreateDialog}>
           <DialogTrigger asChild>
-            <Button className="bg-gold hover:bg-gold/90">
+            <Button className="bg-gold hover:bg-[#fb0090]">
               <Plus className="h-4 w-4 mr-2" />
               Create Campaign
             </Button>
@@ -441,7 +441,7 @@ export function CampaignManager() {
                 </p>
                 <Button
                   onClick={() => setShowCreateDialog(true)}
-                  className="bg-gold hover:bg-gold/90"
+                  className="bg-gold hover:bg-[#fb0090]"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Create Your First Campaign
