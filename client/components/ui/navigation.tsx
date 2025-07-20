@@ -86,7 +86,7 @@ export function Navigation({ className = "" }: NavigationProps) {
               </a>
             </div>
             <Button
-              className="bg-gold hover:bg-gold/90 text-white font-semibold"
+              className="bg-gold hover:bg-[#fb0090] text-white font-semibold"
               asChild
             >
               <Link to="/booking">Book Appointment</Link>
@@ -97,7 +97,7 @@ export function Navigation({ className = "" }: NavigationProps) {
           <div className="flex lg:hidden items-center space-x-2">
             <Button
               size="sm"
-              className="bg-gold hover:bg-gold/90 text-white font-semibold text-xs px-3"
+              className="bg-gold hover:bg-[#fb0090] text-white font-semibold text-xs px-3"
               asChild
             >
               <Link to="/booking">Book</Link>
