@@ -149,7 +149,7 @@ export default function Index() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 w-full sm:w-auto"
+                  className="border-white text-gold hover:bg-white/10 w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/treatments">View Treatments</Link>
