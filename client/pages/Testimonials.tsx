@@ -157,7 +157,7 @@ export default function Testimonials() {
           </p>
           <Button
             size="lg"
-            className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+            className="bg-gold hover:bg-[#fb0090] text-white font-semibold px-8"
             asChild
           >
             <Link to="/booking">Book Your Consultation</Link>
