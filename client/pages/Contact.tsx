@@ -123,7 +123,7 @@ Please respond to this inquiry promptly.
               </p>
               <Button
                 asChild
-                className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
+                className="bg-[#fb0090] hover:bg-gold text-white font-semibold"
               >
                 <Link to="/">Return Home</Link>
               </Button>
@@ -327,7 +327,7 @@ Please respond to this inquiry promptly.
                 <Button
                   type="submit"
                   size="lg"
-                  className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold w-full"
+                  className="bg-[#fb0090] hover:bg-gold text-white font-semibold w-full"
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
