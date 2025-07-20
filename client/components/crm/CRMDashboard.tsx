@@ -157,7 +157,7 @@ export function CRMDashboard() {
             <div className="flex items-center space-x-4">
               <Button
                 onClick={() => setActiveTab("campaigns")}
-                className="bg-gold hover:bg-gold/90"
+                className="bg-gold hover:bg-[#fb0090]"
               >
                 <Plus className="h-4 w-4 mr-2" />
                 New Campaign
