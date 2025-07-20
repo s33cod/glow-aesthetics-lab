@@ -118,7 +118,7 @@ export default function About() {
               </p>
               <Button
                 size="lg"
-                className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold"
+                className="bg-[#fb0090] hover:bg-gold text-white font-semibold"
                 asChild
               >
                 <Link to="/booking">Schedule a Consultation</Link>
@@ -256,7 +256,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-[#fb0090] hover:bg-[#fb0090]/90 text-white font-semibold px-8"
+              className="bg-[#fb0090] hover:bg-gold text-white font-semibold px-8"
               asChild
             >
               <Link to="/booking">Book Consultation</Link>
@@ -264,7 +264,7 @@ export default function About() {
             <Button
               size="lg"
               variant="outline"
-              className="border-gold text-gold hover:bg-gold/10"
+              className="border-gold text-gold hover:border-[#fb0090] hover:text-[#fb0090] hover:bg-[#fb0090]/10"
               asChild
             >
               <Link to="/treatments">View Our Treatments</Link>
