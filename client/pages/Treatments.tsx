@@ -236,7 +236,7 @@ export default function Treatments() {
                     </div>
                     <div className="flex flex-col gap-3">
                       <Button
-                        className="w-full bg-gold hover:bg-gold/90 text-white font-semibold"
+                        className="w-full bg-gold hover:bg-[#fb0090] text-white font-semibold"
                         asChild
                       >
                         <Link to="/booking">
@@ -272,7 +272,7 @@ export default function Treatments() {
           </p>
           <Button
             size="lg"
-            className="bg-gold hover:bg-gold/90 text-white font-semibold px-8"
+            className="bg-gold hover:bg-[#fb0090] text-white font-semibold px-8"
             asChild
           >
             <Link to="/booking">
