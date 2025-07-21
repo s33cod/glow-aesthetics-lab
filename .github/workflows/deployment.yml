@@ -29,10 +29,10 @@ jobs:
     - name: Deploy to cPanel via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.comfortingcaresolutions.co.uk
-        username: codcomfortingcare@cod.comfortingcaresolutions.co.uk
-        password: \o>Fj~7E7K50
+        server: ftp.gal.glowaestheticslab.com/
+        username: 
+        password: 
         port: 21
         local-dir: ./dist/
-        server-dir: /public_html/cod/
+        server-dir: /public_html/gal/
         dangerous-clean-slate: true
